@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "owc-dev-server -o"
+    "start": "es-dev-server --app-index index.html --node-resolve --watch --open",
+    "start:compatibility": "es-dev-server --compatibility all --app-index index.html --node-resolve --watch --open"
   },
   "dependencies": {
     "@polymer/paper-card": "^3.0.1",
@@ -15,6 +16,6 @@
     "pwa-helpers": "^0.9.1"
   },
   "devDependencies": {
-    "owc-dev-server": "^0.1.1"
+    "es-dev-server": "^1.18.0"
   }
 }
